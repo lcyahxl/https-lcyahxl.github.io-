@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW MOMENT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #080808;
+            color: white;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            border-bottom: 1px solid #222;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: white;
+        }
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+        .hero h1 {
+            font-size: clamp(45px, 9vw, 90px);
+            margin-bottom: 20px;
+            animation: aparecer 1s ease;
+        }
+        .hero h1 span {
+            color: #7c3cff;
+        }
+        .hero p {
+            color: #aaa;
+            font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .boton {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 15px 30px;
+            background: #7c3cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .boton:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 30px #7c3cff;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 20px;
+            padding: 30px;
+            width: 280px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #7c3cff;
+        }
+        .card h2 {
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #999;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            border-top: 1px solid #222;
+        }
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">New moment</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#sobre-mi">un hombre normal</a>
+            <a href="#contacto">yahelvalentin555@gmail.com</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Hola, soy <span>TÚ</span> 👋</h1>
+            <p>
+                Bienvenido a mi página web.
+                Aquí podrás conocerme, ver mis proyectos
+                y descubrir todo lo que estoy creando.
+            </p>
+            <a href="#sobre-mi" class="boton">
+                Conocer más
+            </a>
+        </div>
+    </section>
+    <section class="cards" id="sobre-mi">
+        <div class="card">
+            <h2>👤 Sobre mí</h2>
+            <p>
+                Aquí puedes escribir una pequeña descripción
+                sobre ti y lo que te gusta.
+            </p>
+        </div>
+        <div class="card">
+            <h2>🚀 Proyectos</h2>
+            <p>
+                Muestra aquí tus proyectos, trabajos,
+                ideas o cosas que estés creando.
+            </p>
+        </div>
+        <div class="card">
+            <h2>📱 Redes</h2>
+            <p>
+                Agrega tus redes sociales para que
+                las personas puedan encontrarte.
+            </p>
+        </div>
+    </section>
+    <footer id="contacto">
+        © 2026 Mi Página · Hecho por mí 🚀
+    </footer>
+</body>
+</html>
